@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gorjana Jewelry | Handcrafted Fine Jewelry</title>
+    <link rel="stylesheet" href="product.css" href="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+            <nav class="navbar">
+            <img src="logo/gorjanalogo.png" alt="Gorjana logo" class="logoimg">
+            <div class="logo">GORJ<span>ANA</span></div>
+        <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="product.html">Products</a></li>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+            <div class="mobile-menu-btn">☰</div>
+            </nav>
+        </div>
+    </header>
+ <section id="products">
+    <div class="container">
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="img1/gold.png" alt="Delicate gold necklace with small pendant for women">
+                </div>
+                <div class="product-info">
+                    <h3>Gold Pendant Necklace</h3>
+                    <div class="price">₱8,102.00</div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img1/silver.png" alt="Minimalist silver bangle bracelet with thin design">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silver Bangle Bracelet</h3>
+                        <div class="price">₱5,382.00</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img1/goldhoop.png" alt="Pair of elegant gold hoop earrings small size">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gold Hoop Earrings</h3>
+                        <div class="price">₱4,816.00</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="img1/stackable.png" alt="Stackable thin silver rings set of three">
+                    </div>
+                    <div class="product-info">
+                        <h3>Stackable Ring Set</h3>
+                        <div class="price">₱7,082.00</div>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>GORJANA</h3>
+                    <p>jewelry designed to become part of your personal story. Ethical. Sustainable. Beautiful.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="https://www.gorjana.com/page/faq" target="_blank" rel="noopener">FAQ</a></li>
+                        <li><a href="https://www.gorjana.com/page/Shipping-returns" target="_blank" rel="noopener">Shipping Policy</a></li>
+                        <li><a href="https://www.gorjana.com/page/Shipping-returns" target="_blank" rel="noopener" >Returns & Exchanges</a></li>
+                        <li><a href="https://www.gorjana.com/page/size-guide" target="_blank" rel="noopener" >Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/gorjanabrand" title="Facebook">FB</a>
+                        <a href="https://www.instagram.com/gorjana?igsh=YzljYTk10Dg3Zg==" title="Instagram">IG</a>
+                        <a href="https://www.gorjana.com" title="Pinterest">PIN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
